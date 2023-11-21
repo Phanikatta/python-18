@@ -1,0 +1,34 @@
+#Ass-1
+n=int(input())
+l=list(map(int,input().split()))
+e=[]
+o=[]
+for i in l:
+    if i%2==0:
+        e.append(i)
+    else:
+        o.append(i)
+e.extend(o)
+#print(e)
+for i in e:
+    print(i,end=" ")
+
+#Ass-2
+l=list(map(int,input().split()))
+r=[]
+for i in l:
+    if i%2!=0:
+        r.append(i)
+        r.append(i)
+    else:
+        r.append(i)
+#print(r)
+for i in r:
+    print(i,end=" ")
+
+#Ass-3
+n=int(input())
+l=[i for i in range(1,n+1,2)]
+#print(l)
+for i in l:
+        print(i,end=" ")
